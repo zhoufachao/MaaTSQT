@@ -1,0 +1,26 @@
+{
+    "resource": "官服",
+    "controller": {
+        "name": "安卓端"
+    },
+    "adb": {
+        "adb_path": "D:/leidian/LDPlayer9/adb.exe",
+        "address": "emulator-5554",
+        "config": {
+            "extras": {
+                "ld": {
+                    "enable": true,
+                    "index": 0,
+                    "path": "D:/leidian/LDPlayer9",
+                    "pid": 15208
+                }
+            }
+        }
+    },
+    "task": [
+        {
+            "name": "开启游戏天书奇谈",
+            "option": []
+        }
+    ]
+}

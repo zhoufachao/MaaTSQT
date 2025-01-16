@@ -1,0 +1,56 @@
+{
+    "打开天书": {
+        "recognition": "TemplateMatch",
+        "template": "tianshutubiao.png",
+        "action": "Click",
+        "next": [
+            "点击天书确定"
+        ],
+        "post_wait_freezes": 3000
+    },
+    "点击天书确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "next": [
+            "进入游戏"
+        ],
+        "post_wait_freezes": 3000
+    },
+    "进入游戏": {
+        "recognition": "TemplateMatch",
+        "template": "主界面进入游戏图标.png",
+        "action": "Click",
+        "next": [
+            "取消弹窗提醒"
+        ],
+        "interrupt": [
+            "关闭活动弹窗",
+            "关闭活动有礼弹窗"
+        ]
+    },
+    "取消弹窗提醒": {
+        "recognition": "OCR",
+        "expected": "取消",
+        "action": "Click",
+        "next": [
+            "关闭活动弹窗"
+        ]
+    },
+    "关闭活动弹窗": {
+        "recognition": "TemplateMatch",
+        "template": "关闭图标.png",
+        "action": "Click",
+        "next": [
+            "关闭活动有礼弹窗"
+        ]
+    },
+    "关闭活动有礼弹窗": {
+        "recognition": "TemplateMatch",
+        "template": "主界面关闭活动有礼图标.png",
+        "action": "Click",
+        "next": [
+            "进入活动首页"
+        ]
+    }
+}
